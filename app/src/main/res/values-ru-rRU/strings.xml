@@ -2,4 +2,8 @@
 <resources>
     <string name="app_name">Навигатор КГУ</string>
     <string name="menu_name">МЕНЮ</string>
+    <string name="AppName">TextView</string>
+    <string name="logbutton">Войти</string>
+    <string name="string_textview">textlog</string>
+    <string name="your_web_client_id">1</string>
 </resources>

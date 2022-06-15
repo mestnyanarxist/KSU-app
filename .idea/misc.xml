@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.2359375" />
+        <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout-v23/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout-v26/activity_login.xml" value="0.21965579710144928" />
+        <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout/loginmain.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/DrawerStyle.xml" value="0.215" />
         <entry key="app/src/main/res/drawable/header.xml" value="0.215" />
         <entry key="app/src/main/res/drawable/ic_group_39icon.xml" value="0.1995" />
@@ -15,7 +19,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

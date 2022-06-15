@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "487025572403",
+    "firebase_url": "https://ksu-navigation-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ksu-navigation",
+    "storage_bucket": "ksu-navigation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487025572403:android:dbd68bfb276b7bdfcf8146",
+        "android_client_info": {
+          "package_name": "com.example.ksu_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487025572403-hmhlu27afrdfi8ir8r6juqhoaung6lm5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ksu_app",
+            "certificate_hash": "27569b3a95e0aa1d1ec718ed9a4e755cbce7d8bc"
+          }
+        },
+        {
+          "client_id": "487025572403-mthj1g8lptfremepe91ob4qvjl9uk6k8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzA-pzJsbXkCwehE6AP0D92_31q8LR7TY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487025572403-mthj1g8lptfremepe91ob4qvjl9uk6k8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

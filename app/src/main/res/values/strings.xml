@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">KSU Navigation</string>
     <string name="menu_name">MENU</string>
+    <string name="AppName">TextView</string>
+    <string name="logbutton">Log in</string>
+    <string name="string_textview">textlog</string>
+    <string name="your_web_client_id">1</string>
 </resources>
