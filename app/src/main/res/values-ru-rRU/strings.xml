@@ -6,4 +6,8 @@
     <string name="logbutton">Войти</string>
     <string name="string_textview">textlog</string>
     <string name="your_web_client_id">1</string>
+    <string name="logininput">введите логин</string>
+    <string name="passwordinput">введите пароль</string>
+    <string name="falseLoginIn">Ошибка в логине или пароле</string>
+    <string name="welcome">Добро пожаловать!</string>
 </resources>

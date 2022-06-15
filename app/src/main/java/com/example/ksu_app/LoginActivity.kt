@@ -3,6 +3,7 @@ package com.example.ksu_app
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.ksu_app.databinding.ActivityLoginBinding
 import com.google.android.gms.auth.api.identity.BeginSignInRequest
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -17,9 +18,17 @@ class LoginActivity : AppCompatActivity() {
         setContentView(logBinding.root)
 
         logBinding.buttonlog.setOnClickListener(){
-            val intent = Intent( this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
+           //затычка
+            if(logBinding.loginInput.text.toString() == "Novikov" && logBinding.passwordInput.text.toString() == "123")
+            {
+                val intent = Intent( this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+            else {
+                val toast = Toast.makeText(applicationContext, "Ошибка в пароле или логине" , Toast.LENGTH_SHORT)
+                toast.show()
+            }
         }
 
     }

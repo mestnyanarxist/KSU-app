@@ -5,4 +5,8 @@
     <string name="logbutton">Log in</string>
     <string name="string_textview">textlog</string>
     <string name="your_web_client_id">1</string>
+    <string name="logininput">Login</string>
+    <string name="passwordinput">Password</string>
+    <string name="falseLoginIn">False in Login or Password</string>
+    <string name="welcome">Welcome!</string>
 </resources>
