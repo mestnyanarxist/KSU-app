@@ -1,6 +1,8 @@
 package com.example.ksu_app
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -11,11 +13,20 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var logBinding: ActivityLoginBinding
+    private lateinit var LoginS: SharedPreferences
+    private lateinit var PassS: SharedPreferences
+    public var login = "Login"
+    public var password = "Password"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         logBinding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(logBinding.root)
+
+
+
+        LoginS = getSharedPreferences(login, Context.MODE_PRIVATE)
+        PassS = getSharedPreferences(password, Context.MODE_PRIVATE)
 
         logBinding.buttonlog.setOnClickListener(){
            //затычка
@@ -31,6 +42,39 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    override fun onPause() {
+        super.onPause()
+
+        if(logBinding.checkBox.isChecked)
+        {//Запоминание данных
+        val editorLoginS = LoginS.edit()
+        val editorPassS = PassS.edit()
+        editorLoginS.putString(login, logBinding.loginInput.text.toString()).apply()
+        editorPassS.putString(password, logBinding.passwordInput.text.toString()).apply()
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        if(LoginS.contains(login)&&PassS.contains(password)){
+            logBinding.loginInput.setText(LoginS.getString(login, " "))
+            logBinding.passwordInput.setText(PassS.getString(password, " "))
+
+            /*if(logBinding.loginInput.text.toString() == "Novikov" && logBinding.passwordInput.text.toString() == "123")
+            {
+                val intent = Intent( this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+            else {
+                val toast = Toast.makeText(applicationContext, "Ошибка в пароле или логине" , Toast.LENGTH_SHORT)
+                toast.show()
+            }*/
+
+        }
     }
 
     /*private fun getClient() {

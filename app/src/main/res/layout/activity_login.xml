@@ -8,7 +8,7 @@
     tools:context=".LoginActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/constraintLayout1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/main_blue"
@@ -49,9 +49,11 @@
         android:layout_height="58dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/edittextstyle"
+        android:cursorVisible="true"
         android:hint="@string/passwordinput"
         android:textAlignment="center"
         android:textColorHint="#919191"
+        android:textCursorDrawable="?attr/editTextBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginInput"
@@ -65,14 +67,16 @@
         android:layout_marginTop="252dp"
         android:background="@drawable/edittextstyle"
         android:backgroundTintMode="add"
+        android:cursorVisible="true"
         android:hint="@string/logininput"
         android:singleLine="false"
         android:textAlignment="center"
         android:textColorHighlight="#D6D6D6"
         android:textColorHint="#919191"
+        android:textCursorDrawable="?attr/editTextBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout1"
         app:textInputLayoutFocusedRectEnabled="true"
         tools:ignore="TextContrastCheck" />
 
@@ -90,7 +94,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout1"
         app:layout_constraintVertical_bias="0.507" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="?android:attr/listChoiceIndicatorSingle"
+        android:minHeight="68dp"
+        android:text="@string/remember"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonlog"
+        app:layout_constraintVertical_bias="0.044" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

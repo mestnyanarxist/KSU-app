@@ -1,6 +1,8 @@
 package com.example.ksu_app
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ksu_app.databinding.ActivityMainBinding
 import androidx.appcompat.widget.Toolbar
@@ -20,6 +22,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+
+        mBinding.AccountButton.setOnClickListener(){
+            val intent = Intent( this, ProfileActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        val toast = Toast.makeText(applicationContext, "Карта" , Toast.LENGTH_SHORT)
+        toast.show()
     }
 
     override fun onStart() {
