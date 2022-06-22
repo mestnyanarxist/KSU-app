@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ksu_app.databinding.ActivityMainBinding
 import androidx.appcompat.widget.Toolbar
+import com.example.ksu_app.databinding.ActivityHomeworkBinding
 import com.mikepenz.materialdrawer.AccountHeader
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
 import com.mikepenz.materialdrawer.Drawer
@@ -14,17 +15,23 @@ import com.mikepenz.materialdrawer.DrawerBuilder
 import com.mikepenz.materialdrawer.holder.BadgeStyle
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem
 
-class MainActivity : AppCompatActivity() {
+class HomeWorkActivity : AppCompatActivity() {
 
-    private lateinit var mBinding: ActivityMainBinding
+    private lateinit var mBinding: ActivityHomeworkBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mBinding = ActivityMainBinding.inflate(layoutInflater)
+        mBinding = ActivityHomeworkBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
         mBinding.AccountButton.setOnClickListener(){
             val intent = Intent( this, ProfileActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        mBinding.MapButton.setOnClickListener() {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -52,8 +59,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
-        val toast = Toast.makeText(applicationContext, "Карта" , Toast.LENGTH_SHORT)
+        val toast = Toast.makeText(applicationContext, "Домашнее задание" , Toast.LENGTH_SHORT)
         toast.show()
     }
 

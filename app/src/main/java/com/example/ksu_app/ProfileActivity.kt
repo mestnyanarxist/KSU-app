@@ -1,16 +1,14 @@
 package com.example.ksu_app
 
-import android.content.ContentValues.TAG
 import android.content.Intent
-import android.os.Build
+import android.graphics.Bitmap
+import android.net.Uri
 import android.os.Bundle
-import android.os.FileUtils
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ksu_app.databinding.ActivityProfileBinding
-import java.io.File
-import java.io.IOException
+import java.io.FileNotFoundException
+import java.io.InputStream
 
 
 class ProfileActivity : AppCompatActivity() {
@@ -22,21 +20,56 @@ class ProfileActivity : AppCompatActivity() {
         pBinding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(pBinding.root)
 
-        pBinding.MapButton.setOnClickListener(){
-            val intent = Intent( this, MainActivity::class.java)
+        pBinding.AccountButton.setOnClickListener(){
+            val intent = Intent( this, ProfileActivity::class.java)
             startActivity(intent)
             finish()
         }
-        val toast = Toast.makeText(applicationContext, "Аккаунт" , Toast.LENGTH_SHORT)
+
+        pBinding.MapButton.setOnClickListener() {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        pBinding.HomeworkButton.setOnClickListener(){
+            val intent = Intent( this, HomeWorkActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        pBinding.TimetableButton.setOnClickListener(){
+            val intent = Intent( this, TaskActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        pBinding.GroupButton.setOnClickListener(){
+            val intent = Intent( this, GroupActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        pBinding.TeachersButton.setOnClickListener(){
+            val intent = Intent( this, TeachersActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        val toast = Toast.makeText(applicationContext, "Аккаунт", Toast.LENGTH_SHORT)
         toast.show()
 
-        pBinding.ExitButton.setOnClickListener(){
 
-            val intent = Intent( this, LoginActivity::class.java)
+        pBinding.ExitButton.setOnClickListener() {
+
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }
+
+        pBinding.imageView.setImageResource(R.drawable.ic_men2)
     }
+
 
     override fun onStart() {
         super.onStart()

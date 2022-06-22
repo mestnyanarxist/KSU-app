@@ -31,9 +31,10 @@
 
             <TextView
                 android:id="@+id/textnameapp"
-                android:layout_width="142dp"
-                android:layout_height="26dp"
-                android:text="@string/profile"
+                android:layout_width="223dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="ПРЕПОДАВАТЕЛИ"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/white"

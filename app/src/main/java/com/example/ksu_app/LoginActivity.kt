@@ -31,8 +31,8 @@ class LoginActivity : AppCompatActivity() {
 
         logBinding.buttonlog.setOnClickListener() {
             //затычка
-            if (logBinding.loginInput.text.toString() == "admin" &&
-                logBinding.passwordInput.text.toString() == "admin") {
+            if (logBinding.loginInput.text.toString() == "1" &&
+                logBinding.passwordInput.text.toString() == "1") {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
