@@ -11,46 +11,109 @@
 
         tools:ignore="SpeakableTextPresentCheck">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout1"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/main_blue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="283dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/buttonstyle"
+            android:text="КОРПУС 4"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
 
-                <TextView
-                    android:id="@+id/textnameapp"
-                    android:layout_width="72dp"
-                    android:layout_height="29dp"
-                    android:text="@string/map"
-                    android:textAlignment="center"
-                    android:textAllCaps="true"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.523" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/buttonstyle" />
-
-        </LinearLayout>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="283dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/buttonstyle"
+            android:text="КОРПУС 3"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout1"
+            android:layout_width="424dp"
+            android:layout_height="50dp"
+            android:background="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="47dp"
+                android:layout_height="45dp"
+                android:background="@android:drawable/ic_menu_sort_by_size"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <TextView
+                android:id="@+id/textnameapp"
+                android:layout_width="72dp"
+                android:layout_height="29dp"
+                android:text="@string/map"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.523" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="283dp"
+            android:layout_height="84dp"
+            android:background="@drawable/buttonstyle"
+            android:text="КОРПУС 1"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="156dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="283dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/buttonstyle"
+            android:text="КОРПУС 2"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/Content"
             android:layout_width="150dp"
             android:layout_height="match_parent"
