@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.ksu_app.databinding.ActivityMainBinding
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
+import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
 import com.mikepenz.materialdrawer.AccountHeader
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
 import com.mikepenz.materialdrawer.Drawer
@@ -23,6 +24,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+
+        val myVect1 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim)
+        val myVect2 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim2)
+        mBinding.imageView2.setImageDrawable(myVect1)
+        mBinding.imageView3.setImageDrawable(myVect2)
+        mBinding.imageView4.setImageDrawable(myVect1)
+        mBinding.imageView5.setImageDrawable(myVect2)
+        myVect1?.start()
+        myVect2?.start()
 
         mBinding.AccountButton.setOnClickListener(){
             val intent = Intent( this, ProfileActivity::class.java)

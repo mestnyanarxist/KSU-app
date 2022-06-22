@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import com.example.ksu_app.databinding.ActivityProfileBinding
 import java.io.FileNotFoundException
 import java.io.InputStream
@@ -65,6 +66,10 @@ class ProfileActivity : AppCompatActivity() {
             val intent = Intent( this, SettingsActivity::class.java)
             startActivity(intent)
             finish()
+        }
+
+        pBinding.button7.setOnClickListener(){
+            pBinding.Drawer.openDrawer(GravityCompat.START)
         }
 
         pBinding.imageView.setImageResource(R.drawable.ic_men2)

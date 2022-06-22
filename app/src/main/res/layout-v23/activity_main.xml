@@ -12,59 +12,81 @@
         tools:ignore="SpeakableTextPresentCheck">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout1"
+        android:id="@+id/Constrlay2"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/backblue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="283dp"
-            android:layout_height="84dp"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="382dp"
+            android:layout_height="145dp"
             android:layout_marginTop="28dp"
-            android:background="@drawable/buttonstyle"
-            android:text="КОРПУС 4"
-            android:textAllCaps="true"
-            android:textColor="@color/white"
-            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintHorizontal_bias="0.551"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.059"
+            app:srcCompat="@drawable/ic_rocket" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="283dp"
-            android:layout_height="84dp"
-            android:layout_marginTop="28dp"
-            android:background="@drawable/buttonstyle"
-            android:text="КОРПУС 3"
-            android:textAllCaps="true"
-            android:textColor="@color/white"
-            android:textSize="34sp"
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="382dp"
+            android:layout_height="145dp"
+            android:layout_marginBottom="332dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_rocket2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="382dp"
+            android:layout_height="145dp"
+            android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_rocket2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="382dp"
+            android:layout_height="145dp"
+            android:layout_marginBottom="184dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_rocket2" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout1"
+            android:id="@+id/constraintLayout"
             android:layout_width="424dp"
             android:layout_height="50dp"
-            android:background="@color/main_blue"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:background="@color/main_blue">
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="47dp"
                 android:layout_height="45dp"
+                android:layout_marginStart="16dp"
                 android:background="@android:drawable/ic_menu_sort_by_size"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="3dp" />
+                android:backgroundTint="#FFFFFF"
+                android:backgroundTintMode="multiply"
+                android:drawableBottom="@drawable/buttonstyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.6" />
 
             <TextView
                 android:id="@+id/textnameapp"
@@ -84,18 +106,46 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
+            android:id="@+id/button5"
+            android:layout_width="283dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstyle"
+            android:text="КОРПУС 4"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="283dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstyle"
+            android:text="КОРПУС 3"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        <Button
             android:id="@+id/button2"
             android:layout_width="283dp"
             android:layout_height="84dp"
+            android:layout_marginTop="108dp"
             android:background="@drawable/buttonstyle"
             android:text="КОРПУС 1"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="156dp" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
         <Button
             android:id="@+id/button3"
