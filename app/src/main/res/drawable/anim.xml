@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable = "@drawable/ic_rocket" >
+
+    <target
+        android:name = "rocket1"
+        android:animation="@animator/strokecolor1"
+        />
+    <target
+        android:name = "rocket2"
+        android:animation="@animator/strokecolor2"
+        />
+    <target
+        android:name = "rocket3"
+        android:animation="@animator/strokecolor3"
+        />
+    <target
+        android:name = "rocket4"
+        android:animation="@animator/strokecolor4"
+        />
+
+
+</animated-vector>

@@ -36,8 +36,8 @@ class HomeWorkActivity : AppCompatActivity() {
             finish()
         }
 
-        mBinding.HomeworkButton.setOnClickListener(){
-            val intent = Intent( this, HomeWorkActivity::class.java)
+        mBinding.SettingsButton.setOnClickListener(){
+            val intent = Intent( this, SettingsActivity::class.java)
             startActivity(intent)
             finish()
         }

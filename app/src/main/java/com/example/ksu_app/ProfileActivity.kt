@@ -20,12 +20,6 @@ class ProfileActivity : AppCompatActivity() {
         pBinding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(pBinding.root)
 
-        pBinding.AccountButton.setOnClickListener(){
-            val intent = Intent( this, ProfileActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
         pBinding.MapButton.setOnClickListener() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -63,6 +57,12 @@ class ProfileActivity : AppCompatActivity() {
         pBinding.ExitButton.setOnClickListener() {
 
             val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        pBinding.SettingsButton.setOnClickListener(){
+            val intent = Intent( this, SettingsActivity::class.java)
             startActivity(intent)
             finish()
         }

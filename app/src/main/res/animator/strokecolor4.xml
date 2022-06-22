@@ -1,0 +1,21 @@
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:duration="1000"
+        android:startOffset="1000"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:propertyName="strokeColor"
+        android:valueFrom="#00ffffff"
+        android:valueTo="#ffffff"
+        />
+    <objectAnimator
+        android:duration="1000"
+        android:startOffset="1000"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:propertyName="strokeColor"
+        android:valueFrom="#ffffff"
+        android:valueTo="#00ffffff"
+        />
+</set>

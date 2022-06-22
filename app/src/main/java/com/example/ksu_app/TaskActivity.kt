@@ -54,8 +54,8 @@ class TaskActivity : AppCompatActivity() {
             finish()
         }
 
-        mBinding.TimetableButton.setOnClickListener(){
-            val intent = Intent( this, TaskActivity::class.java)
+        mBinding.SettingsButton.setOnClickListener(){
+            val intent = Intent( this, SettingsActivity::class.java)
             startActivity(intent)
             finish()
         }

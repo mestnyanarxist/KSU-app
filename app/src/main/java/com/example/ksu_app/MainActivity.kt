@@ -53,6 +53,12 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
+        mBinding.SettingsButton.setOnClickListener(){
+            val intent = Intent( this, SettingsActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         val toast = Toast.makeText(applicationContext, "Карта" , Toast.LENGTH_SHORT)
         toast.show()
     }

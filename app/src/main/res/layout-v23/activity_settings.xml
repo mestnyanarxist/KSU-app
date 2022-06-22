@@ -27,9 +27,9 @@
 
                 <TextView
                     android:id="@+id/textnameapp"
-                    android:layout_width="72dp"
-                    android:layout_height="29dp"
-                    android:text="@string/map"
+                    android:layout_width="178dp"
+                    android:layout_height="30dp"
+                    android:text="НАСТРОЙКИ"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
@@ -41,12 +41,6 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.523" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/buttonstyle" />
 
         </LinearLayout>
 

@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ksu_app.databinding.ActivityMainBinding
 import androidx.appcompat.widget.Toolbar
-import com.example.ksu_app.databinding.ActivityTeachersBinding
 import com.mikepenz.materialdrawer.AccountHeader
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
 import com.mikepenz.materialdrawer.Drawer
@@ -15,23 +14,17 @@ import com.mikepenz.materialdrawer.DrawerBuilder
 import com.mikepenz.materialdrawer.holder.BadgeStyle
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem
 
-class TeachersActivity : AppCompatActivity() {
+class SettingsActivity : AppCompatActivity() {
 
-    private lateinit var mBinding: ActivityTeachersBinding
+    private lateinit var mBinding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mBinding = ActivityTeachersBinding.inflate(layoutInflater)
+        mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
         mBinding.AccountButton.setOnClickListener(){
             val intent = Intent( this, ProfileActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-        mBinding.MapButton.setOnClickListener() {
-            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -54,12 +47,13 @@ class TeachersActivity : AppCompatActivity() {
             finish()
         }
 
-        mBinding.SettingsButton.setOnClickListener(){
-            val intent = Intent( this, SettingsActivity::class.java)
+        mBinding.TeachersButton.setOnClickListener(){
+            val intent = Intent( this, TeachersActivity::class.java)
             startActivity(intent)
             finish()
         }
-        val toast = Toast.makeText(applicationContext, "Преподаватели" , Toast.LENGTH_SHORT)
+
+        val toast = Toast.makeText(applicationContext, "Настройки" , Toast.LENGTH_SHORT)
         toast.show()
     }
 

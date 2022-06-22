@@ -48,8 +48,8 @@ class GroupActivity : AppCompatActivity() {
             finish()
         }
 
-        mBinding.GroupButton.setOnClickListener(){
-            val intent = Intent( this, GroupActivity::class.java)
+        mBinding.SettingsButton.setOnClickListener(){
+            val intent = Intent( this, SettingsActivity::class.java)
             startActivity(intent)
             finish()
         }
