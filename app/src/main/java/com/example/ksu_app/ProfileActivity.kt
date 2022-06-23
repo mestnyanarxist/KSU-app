@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
 import com.example.ksu_app.databinding.ActivityProfileBinding
 import java.io.FileNotFoundException
 import java.io.InputStream
@@ -20,6 +21,15 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         pBinding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(pBinding.root)
+
+        val myVect1 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim)
+        val myVect2 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim2)
+        pBinding.imageView6.setImageDrawable(myVect1)
+        pBinding.imageView7.setImageDrawable(myVect2)
+        pBinding.imageView8.setImageDrawable(myVect1)
+        pBinding.imageView9.setImageDrawable(myVect2)
+        myVect1?.start()
+        myVect2?.start()
 
         pBinding.MapButton.setOnClickListener() {
             val intent = Intent(this, MainActivity::class.java)

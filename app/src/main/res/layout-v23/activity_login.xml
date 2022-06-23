@@ -41,7 +41,7 @@
         app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.059"
+        app:layout_constraintVertical_bias="0.029"
         app:srcCompat="@drawable/ic_rocket" />
 
     <ImageView
@@ -85,7 +85,7 @@
         android:layout_width="173dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/buttonstyle"
+        android:background="@drawable/buttonselector"
         android:text="@string/logbutton"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

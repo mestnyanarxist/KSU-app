@@ -17,23 +17,10 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="382dp"
-            android:layout_height="145dp"
-            android:layout_marginTop="28dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.551"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-            app:layout_constraintVertical_bias="0.059"
-            app:srcCompat="@drawable/ic_rocket" />
-
-        <ImageView
             android:id="@+id/imageView3"
             android:layout_width="382dp"
             android:layout_height="145dp"
-            android:layout_marginBottom="332dp"
+            android:layout_marginBottom="356dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.551"
@@ -43,10 +30,23 @@
             app:srcCompat="@drawable/ic_rocket2" />
 
         <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="382dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.003"
+            app:srcCompat="@drawable/ic_rocket" />
+
+        <ImageView
             android:id="@+id/imageView4"
             android:layout_width="382dp"
             android:layout_height="145dp"
-            android:layout_marginBottom="36dp"
+            android:layout_marginBottom="60dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.482"
@@ -59,7 +59,7 @@
             android:id="@+id/imageView5"
             android:layout_width="382dp"
             android:layout_height="145dp"
-            android:layout_marginBottom="184dp"
+            android:layout_marginBottom="208dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.551"
@@ -79,7 +79,7 @@
                 android:layout_width="47dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="16dp"
-                android:background="@android:drawable/ic_menu_sort_by_size"
+                android:background="@drawable/menubutselector"
                 android:backgroundTint="#FFFFFF"
                 android:backgroundTintMode="multiply"
                 android:drawableBottom="@drawable/buttonstyle"
@@ -110,7 +110,7 @@
             android:layout_width="283dp"
             android:layout_height="84dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/buttonstyle"
+            android:background="@drawable/buttonselector"
             android:text="КОРПУС 4"
             android:textAllCaps="true"
             android:textColor="@color/white"
@@ -124,7 +124,7 @@
             android:layout_width="283dp"
             android:layout_height="84dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/buttonstyle"
+            android:background="@drawable/buttonselector"
             android:text="КОРПУС 3"
             android:textAllCaps="true"
             android:textColor="@color/white"
@@ -138,7 +138,7 @@
             android:layout_width="283dp"
             android:layout_height="84dp"
             android:layout_marginTop="108dp"
-            android:background="@drawable/buttonstyle"
+            android:background="@drawable/buttonselector"
             android:text="КОРПУС 1"
             android:textAllCaps="true"
             android:textColor="@color/white"
@@ -152,7 +152,7 @@
             android:layout_width="283dp"
             android:layout_height="84dp"
             android:layout_marginTop="28dp"
-            android:background="@drawable/buttonstyle"
+            android:background="@drawable/buttonselector"
             android:text="КОРПУС 2"
             android:textAllCaps="true"
             android:textColor="@color/white"

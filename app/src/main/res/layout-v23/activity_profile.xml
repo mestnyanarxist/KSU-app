@@ -20,6 +20,58 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="382dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.041"
+            app:srcCompat="@drawable/ic_rocket" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="382dp"
+            android:layout_height="145dp"
+            android:layout_marginBottom="340dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_rocket2" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="382dp"
+            android:layout_height="145dp"
+            android:layout_marginBottom="44dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_rocket2" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="382dp"
+            android:layout_height="145dp"
+            android:layout_marginBottom="192dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_rocket2" />
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
@@ -34,7 +86,7 @@
                 android:layout_width="47dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="16dp"
-                android:background="@android:drawable/ic_menu_sort_by_size"
+                android:background="@drawable/menubutselector"
                 android:backgroundTint="#FFFFFF"
                 android:backgroundTintMode="multiply"
                 android:drawableBottom="@drawable/buttonstyle"
@@ -63,9 +115,9 @@
             android:id="@+id/ExitButton"
             android:layout_width="181dp"
             android:layout_height="62dp"
-            android:layout_marginBottom="68dp"
+            android:layout_marginBottom="52dp"
             android:autoText="false"
-            android:background="@drawable/buttonstyle"
+            android:background="@drawable/buttonselector"
             android:elegantTextHeight="false"
             android:freezesText="false"
             android:text="@string/exit"
