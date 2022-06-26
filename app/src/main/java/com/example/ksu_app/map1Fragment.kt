@@ -39,9 +39,7 @@ class map1Fragment : Fragment() {
         }
 
         mBinding.button8.setOnClickListener(){
-
-            mBinding.imageView.setMinimumScaleType(1)
-
+            
             if(mBinding.imageView.scaleX == 2F && mBinding.imageView.scaleY == 2F ){
                 mBinding.imageView.scaleX = 4F
                 mBinding.imageView.scaleY = 4F
