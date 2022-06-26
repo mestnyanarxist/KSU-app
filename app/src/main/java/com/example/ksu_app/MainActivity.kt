@@ -2,11 +2,13 @@ package com.example.ksu_app
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ksu_app.databinding.ActivityMainBinding
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.FragmentTransaction
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
 import com.mikepenz.materialdrawer.AccountHeader
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
@@ -24,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+
+        mBinding.button2.setOnClickListener(){
+            openfragment()
+        }
 
         val myVect1 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim)
         val myVect2 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim2)
@@ -78,9 +84,15 @@ class MainActivity : AppCompatActivity() {
         toast.show()
     }
 
+    private fun openfragment() {
+        supportFragmentManager.beginTransaction().replace(R.id.frame1, map1Fragment.newInstance())
+            .commit()
+    }
+
     override fun onStart() {
         super.onStart()
 
     }
 
 }
+
