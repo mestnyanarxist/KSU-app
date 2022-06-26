@@ -20,15 +20,22 @@ class map1Fragment : Fragment() {
         mBinding = FragmentMap1Binding.inflate(inflater)
         return mBinding.root
 
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+
         mBinding.button11.setOnClickListener(){
             mBinding.Drawer.openDrawer(GravityCompat.START)
         }
 
         mBinding.button10.setOnClickListener(){
-            activity?.onBackPressed()
-        }
+            activity?.supportFragmentManager?.beginTransaction()?.remove(this)?.commit()
 
+        }
     }
+
 
     companion object{
 
