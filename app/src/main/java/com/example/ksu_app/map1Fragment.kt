@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.GravityCompat
+import com.davemorrissey.labs.subscaleview.ImageSource
+import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
 import com.example.ksu_app.databinding.FragmentMap1Binding
 
 class map1Fragment : Fragment() {
@@ -26,14 +28,41 @@ class map1Fragment : Fragment() {
     override fun onResume() {
         super.onResume()
 
+        mBinding.imageView.setImage(ImageSource.resource(R.drawable.mapimg))
+
         mBinding.button11.setOnClickListener(){
-            mBinding.Drawer.openDrawer(GravityCompat.START)
+            mBinding.Drawer.openDrawer(GravityCompat.END)
         }
 
         mBinding.button10.setOnClickListener(){
             activity?.supportFragmentManager?.beginTransaction()?.remove(this)?.commit()
+        }
+
+        mBinding.button8.setOnClickListener(){
+
+            mBinding.imageView.setMinimumScaleType(1)
+
+            if(mBinding.imageView.scaleX == 2F && mBinding.imageView.scaleY == 2F ){
+                mBinding.imageView.scaleX = 4F
+                mBinding.imageView.scaleY = 4F
+
+            }
+            if(mBinding.imageView.scaleX == 4F && mBinding.imageView.scaleY == 4F ){
+            mBinding.imageView.scaleX = 6F
+            mBinding.imageView.scaleY = 6F
+            }
+            else{
+                mBinding.imageView.scaleX = 2F
+                mBinding.imageView.scaleY = 2F
+            }
 
         }
+
+        mBinding.button9.setOnClickListener(){
+            mBinding.imageView.scaleX = 1F
+            mBinding.imageView.scaleY = 1F
+        }
+
     }
 
 
