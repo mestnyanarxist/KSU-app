@@ -1,14 +1,20 @@
 package com.example.ksu_app
 
+import android.content.ClipData
 import android.content.Intent
 import android.os.Bundle
 import android.widget.FrameLayout
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ksu_app.databinding.ActivityMainBinding
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.FragmentTransaction
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
 import com.mikepenz.materialdrawer.AccountHeader
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
@@ -21,15 +27,22 @@ import com.mikepenz.materialdrawer.model.PrimaryDrawerItem
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mBinding: ActivityMainBinding
+    private val datamodel: DataModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
-        mBinding.button2.setOnClickListener(){
+        mBinding.button4.setOnClickListener(){
+
+            datamodel.massage.observe(this,{
+                datamodel.massage.value = 1
+            })
             openfragment()
         }
+
+
 
         val myVect1 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim)
         val myVect2 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim2)
@@ -94,5 +107,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+}
+
+class DataModel : ViewModel() {
+    val massage: MutableLiveData<Int> by lazy {
+        MutableLiveData<Int>()
+    }
 }
 

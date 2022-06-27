@@ -5,14 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.viewModels
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.activityViewModels
 import com.davemorrissey.labs.subscaleview.ImageSource
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
 import com.example.ksu_app.databinding.FragmentMap1Binding
+import kotlin.properties.ReadOnlyProperty
 
 class map1Fragment : Fragment() {
 
     private lateinit var mBinding: FragmentMap1Binding
+    private val viewModel: DataModel by activityViewModels()
 
 
     override fun onCreateView(
@@ -27,7 +31,7 @@ class map1Fragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-
+        viewModel.selectItem(item)
         mBinding.imageView.setImage(ImageSource.resource(R.drawable.mapimg))
 
         mBinding.button11.setOnClickListener(){
