@@ -34,11 +34,23 @@ class MainActivity : AppCompatActivity() {
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
-        mBinding.button4.setOnClickListener(){
+        mBinding.button2.setOnClickListener(){
+            datamodel.massage.value = 1
+            openfragment()
+        }
 
-            datamodel.massage.observe(this,{
-                datamodel.massage.value = 1
-            })
+        mBinding.button3.setOnClickListener(){
+            datamodel.massage.value = 2
+            openfragment()
+        }
+
+        mBinding.button4.setOnClickListener(){
+            datamodel.massage.value = 3
+            openfragment()
+        }
+
+        mBinding.button5.setOnClickListener(){
+            datamodel.massage.value = 4
             openfragment()
         }
 
