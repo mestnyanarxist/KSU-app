@@ -6,6 +6,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ksu_app.databinding.ActivityMainBinding
 import androidx.appcompat.widget.Toolbar
+import androidx.core.view.GravityCompat
+import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
 import com.example.ksu_app.databinding.ActivityHomeworkBinding
 import com.mikepenz.materialdrawer.AccountHeader
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
@@ -23,6 +25,30 @@ class HomeWorkActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivityHomeworkBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
+
+        //Работа с анимацией
+        val myVect1 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim)
+        val myVect2 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim2)
+        mBinding.imageView2.setImageDrawable(myVect1)
+        mBinding.imageView3.setImageDrawable(myVect2)
+        mBinding.imageView4.setImageDrawable(myVect1)
+        mBinding.imageView5.setImageDrawable(myVect2)
+        myVect1?.start()
+        myVect2?.start()
+
+        mBinding.button6.setOnClickListener(){
+            mBinding.Drawer.openDrawer(GravityCompat.START)
+        }
+
+        mBinding.textView11.setOnClickListener(){
+            openfragment()
+        }
+        mBinding.textView13.setOnClickListener(){
+            openfragment()
+        }
+        mBinding.textView15.setOnClickListener(){
+            openfragment()
+        }
 
         mBinding.AccountButton.setOnClickListener(){
             val intent = Intent( this, ProfileActivity::class.java)
@@ -65,7 +91,11 @@ class HomeWorkActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
+    }
 
+    private fun openfragment() {
+        supportFragmentManager.beginTransaction().replace(R.id.frame3, homework.newInstance())
+            .commit()
     }
 
 }

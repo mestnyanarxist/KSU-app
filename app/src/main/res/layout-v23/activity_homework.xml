@@ -73,7 +73,10 @@
             android:id="@+id/constraintLayout"
             android:layout_width="424dp"
             android:layout_height="50dp"
-            android:background="@color/main_blue">
+            android:background="@color/main_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <Button
                 android:id="@+id/button6"
@@ -105,7 +108,367 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <ScrollView
+            android:layout_width="394dp"
+            android:layout_height="670dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="11"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="65dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/edittextstyle"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="ПРЕДМЕТ"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+    </FrameLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/Content"
@@ -216,4 +579,4 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
