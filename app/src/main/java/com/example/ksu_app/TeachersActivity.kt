@@ -26,16 +26,6 @@ class TeachersActivity : AppCompatActivity() {
         mBinding = ActivityTeachersBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
-        //Работа с анимацией
-        val myVect1 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim)
-        val myVect2 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim2)
-        mBinding.imageView2.setImageDrawable(myVect1)
-        mBinding.imageView3.setImageDrawable(myVect2)
-        mBinding.imageView4.setImageDrawable(myVect1)
-        mBinding.imageView5.setImageDrawable(myVect2)
-        myVect1?.start()
-        myVect2?.start()
-
         mBinding.button6.setOnClickListener(){
             mBinding.Drawer.openDrawer(GravityCompat.START)
         }
