@@ -1,28 +1,17 @@
 package com.example.ksu_app
 
-import android.content.ClipData
 import android.content.Intent
 import android.os.Bundle
-import android.widget.FrameLayout
+import android.view.KeyEvent
+import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.example.ksu_app.databinding.ActivityMainBinding
-import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
-import androidx.fragment.app.FragmentTransaction
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
-import com.mikepenz.materialdrawer.AccountHeader
-import com.mikepenz.materialdrawer.AccountHeaderBuilder
-import com.mikepenz.materialdrawer.Drawer
-
-import com.mikepenz.materialdrawer.DrawerBuilder
-import com.mikepenz.materialdrawer.holder.BadgeStyle
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem
+import com.example.ksu_app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,7 +23,9 @@ class MainActivity : AppCompatActivity() {
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
+        //Работа с фрагментом
         mBinding.button2.setOnClickListener(){
+
             datamodel.massage.value = 1
             openfragment()
         }
@@ -54,8 +45,7 @@ class MainActivity : AppCompatActivity() {
             openfragment()
         }
 
-
-
+        //Работа с анимацией
         val myVect1 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim)
         val myVect2 = AnimatedVectorDrawableCompat.create(this, R.drawable.anim2)
         mBinding.imageView2.setImageDrawable(myVect1)
@@ -109,18 +99,15 @@ class MainActivity : AppCompatActivity() {
         toast.show()
     }
 
+    //Открыть фрагмент
     private fun openfragment() {
         supportFragmentManager.beginTransaction().replace(R.id.frame1, map1Fragment.newInstance())
             .commit()
     }
 
-    override fun onStart() {
-        super.onStart()
-
-    }
-
 }
 
+//Класс для обмена данными между активити и/или фрагментами
 class DataModel : ViewModel() {
     val massage: MutableLiveData<Int> by lazy {
         MutableLiveData<Int>()

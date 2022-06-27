@@ -1,22 +1,16 @@
 package com.example.ksu_app
 
+
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.viewModels
-import androidx.annotation.IdRes
-import androidx.annotation.IntegerRes
 import androidx.core.view.GravityCompat
-import androidx.core.view.marginTop
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.davemorrissey.labs.subscaleview.ImageSource
-import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
 import com.example.ksu_app.databinding.FragmentMap1Binding
-import java.sql.RowId
-import kotlin.math.absoluteValue
-import kotlin.properties.ReadOnlyProperty
+
 
 class map1Fragment : Fragment() {
 
@@ -30,14 +24,13 @@ class map1Fragment : Fragment() {
     ): View? {
         mBinding = FragmentMap1Binding.inflate(inflater)
         return mBinding.root
-
-
     }
 
     override fun onResume() {
         super.onResume()
-        datamodel.massage.value
-            when(datamodel.massage.value){
+
+        //Выбор изображений в зависимости от корпуса
+        when(datamodel.massage.value){
             1 -> ChooseFloor(null, R.drawable.map31 ,null,null,
                 null, null, null,null, null, null)
             2 -> ChooseFloor(null, R.drawable.map31 ,R.drawable.map32,null,
@@ -48,13 +41,11 @@ class map1Fragment : Fragment() {
                 null, null, null,null, null, null)
         }
 
-
-
-
+        //Закрытие фрагмента
         mBinding.button10.setOnClickListener(){
             activity?.supportFragmentManager?.beginTransaction()?.remove(this)?.commit()
         }
-
+        //Зумирование карты
         mBinding.button8.setOnClickListener(){
             
             if(mBinding.imageView.scaleX == 2F && mBinding.imageView.scaleY == 2F ){
@@ -72,7 +63,6 @@ class map1Fragment : Fragment() {
             }
 
         }
-
         mBinding.button9.setOnClickListener(){
             mBinding.imageView.scaleX = 1F
             mBinding.imageView.scaleY = 1F
@@ -80,6 +70,7 @@ class map1Fragment : Fragment() {
 
     }
 
+    //Функция обработки работы с этажами
      fun ChooseFloor(img : Int?, img1 : Int, img2 : Int?, img3 :
      Int?, img4 : Int?,img5 : Int?,img6 : Int?,img7 : Int?, img8 : Int?,img9 : Int?)
     {
@@ -91,14 +82,12 @@ class map1Fragment : Fragment() {
             }
         if(img3 == null)
         {
-
             mBinding.button13.visibility = View.GONE
         }
         if(img4 == null)
             mBinding.button12.visibility = View.GONE
         if(img5 == null)
         {
-            mBinding.Content.marginTop.absoluteValue = 10
             mBinding.button16.visibility = View.GONE
         }
         if(img6 == null)
@@ -145,8 +134,12 @@ class map1Fragment : Fragment() {
     }
 
 
+
+    //Функция открытия фрагмента из активити
     companion object{
 
         fun newInstance() = map1Fragment()
+
     }
+
 }

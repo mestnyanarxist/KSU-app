@@ -7,6 +7,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="backblue">#99C8E2FF</color>
     <color name="backblue_press">#999ABDE4</color>
+    <color name="backblue_text">#9ABDE4</color>
     <color name="alphagrey">#3CFFFFFF</color>
     <color name="tabulation">#C1001417</color>
 </resources>

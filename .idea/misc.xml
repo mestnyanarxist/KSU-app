@@ -11,6 +11,7 @@
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/drawable/buttonstylepressed.xml" value="0.211" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/drawable/checkstyle.xml" value="0.231" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/drawable/edittextstyle.xml" value="0.231" />
+        <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/drawable/edittextstyle2.xml" value="0.208" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/drawable/ic_account.xml" value="0.1925" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/drawable/ic_group.xml" value="0.18" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18" />
@@ -31,7 +32,7 @@
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout-v23/activity_main.xml" value="0.12" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout-v23/activity_profile.xml" value="0.2" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout-v23/activity_settings.xml" value="0.10450819672131148" />
-        <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout-v23/activity_task.xml" value="0.14188576609247508" />
+        <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout-v23/activity_task.xml" value="0.18" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout-v23/activity_teachers.xml" value="0.14188576609247508" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout-v26/activity_group.xml" value="0.16" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout-v26/activity_homework.xml" value="0.14" />
@@ -44,7 +45,8 @@
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout/activity_task.xml" value="0.5" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout/activity_teachers.xml" value="0.5" />
-        <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout/fragment_map1.xml" value="0.168359375" />
+        <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout/fragment_map1.xml" value="0.16" />
+        <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout/fragment_timetable.xml" value="0.168359375" />
         <entry key="..\:/Users/Neonics.MESTNYANARXIST/StudioProjects/app/src/main/res/layout/loginmain.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/DrawerStyle.xml" value="0.215" />
         <entry key="app/src/main/res/drawable/header.xml" value="0.215" />
