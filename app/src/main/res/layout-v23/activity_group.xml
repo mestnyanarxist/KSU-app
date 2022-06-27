@@ -16,58 +16,6 @@
         android:layout_height="match_parent"
         android:visibility="visible">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="382dp"
-            android:layout_height="145dp"
-            android:layout_marginBottom="356dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.551"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/ic_rocket2" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="382dp"
-            android:layout_height="145dp"
-            android:layout_marginTop="28dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.551"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-            app:layout_constraintVertical_bias="0.003"
-            app:srcCompat="@drawable/ic_rocket" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="382dp"
-            android:layout_height="145dp"
-            android:layout_marginBottom="60dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.482"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView12"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/ic_rocket2" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="382dp"
-            android:layout_height="145dp"
-            android:layout_marginBottom="208dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.551"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView13"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/ic_rocket2" />
-
         <TextView
             android:id="@+id/textView35"
             android:layout_width="413dp"
@@ -86,8 +34,7 @@
             android:layout_height="506dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+            app:layout_constraintStart_toStartOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
